@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93BEFADD18FD1B0A00488967 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BEFADC18FD1B0A00488967 /* Foundation.framework */; };
+		93BEFADF18FD1B0A00488967 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BEFADE18FD1B0A00488967 /* CoreGraphics.framework */; };
+		93BEFAE118FD1B0A00488967 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BEFAE018FD1B0A00488967 /* UIKit.framework */; };
+		93BEFAE718FD1B0A00488967 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93BEFAE518FD1B0A00488967 /* InfoPlist.strings */; };
+		93BEFAE918FD1B0A00488967 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BEFAE818FD1B0A00488967 /* main.m */; };
+		93BEFAED18FD1B0A00488967 /* SCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BEFAEC18FD1B0A00488967 /* SCAppDelegate.m */; };
+		93BEFAEF18FD1B0A00488967 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93BEFAEE18FD1B0A00488967 /* Images.xcassets */; };
+		93BEFAF618FD1B0A00488967 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BEFAF518FD1B0A00488967 /* XCTest.framework */; };
+		93BEFAF718FD1B0A00488967 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BEFADC18FD1B0A00488967 /* Foundation.framework */; };
+		93BEFAF818FD1B0A00488967 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BEFAE018FD1B0A00488967 /* UIKit.framework */; };
+		93BEFB0018FD1B0A00488967 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93BEFAFE18FD1B0A00488967 /* InfoPlist.strings */; };
+		93BEFB0218FD1B0A00488967 /* SCRsaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BEFB0118FD1B0A00488967 /* SCRsaTests.m */; };
+		93BEFB1518FD1C2200488967 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BEFB1218FD1C2200488967 /* Base64.m */; };
+		93BEFB1618FD1C2200488967 /* SCRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BEFB1418FD1C2200488967 /* SCRSA.m */; };
+		93BEFB1A18FD1E1E00488967 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BEFB1818FD1E1E00488967 /* libcrypto.a */; };
+		93BEFB1B18FD1E1E00488967 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BEFB1918FD1E1E00488967 /* libssl.a */; };
+		93BEFB1E18FD1E4D00488967 /* SCRsaTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BEFB1D18FD1E4D00488967 /* SCRsaTestViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93BEFAF918FD1B0A00488967 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93BEFAD118FD1B0900488967 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93BEFAD818FD1B0A00488967;
+			remoteInfo = SCRsa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		93BEFAD918FD1B0A00488967 /* SCRsa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCRsa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93BEFADC18FD1B0A00488967 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		93BEFADE18FD1B0A00488967 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		93BEFAE018FD1B0A00488967 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		93BEFAE418FD1B0A00488967 /* SCRsa-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SCRsa-Info.plist"; sourceTree = "<group>"; };
+		93BEFAE618FD1B0A00488967 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		93BEFAE818FD1B0A00488967 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93BEFAEA18FD1B0A00488967 /* SCRsa-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCRsa-Prefix.pch"; sourceTree = "<group>"; };
+		93BEFAEB18FD1B0A00488967 /* SCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAppDelegate.h; sourceTree = "<group>"; };
+		93BEFAEC18FD1B0A00488967 /* SCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAppDelegate.m; sourceTree = "<group>"; };
+		93BEFAEE18FD1B0A00488967 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		93BEFAF418FD1B0A00488967 /* SCRsaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCRsaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93BEFAF518FD1B0A00488967 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		93BEFAFD18FD1B0A00488967 /* SCRsaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SCRsaTests-Info.plist"; sourceTree = "<group>"; };
+		93BEFAFF18FD1B0A00488967 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		93BEFB0118FD1B0A00488967 /* SCRsaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCRsaTests.m; sourceTree = "<group>"; };
+		93BEFB1118FD1C2200488967 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		93BEFB1218FD1C2200488967 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		93BEFB1318FD1C2200488967 /* SCRSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRSA.h; sourceTree = "<group>"; };
+		93BEFB1418FD1C2200488967 /* SCRSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRSA.m; sourceTree = "<group>"; };
+		93BEFB1818FD1E1E00488967 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		93BEFB1918FD1E1E00488967 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		93BEFB1C18FD1E4D00488967 /* SCRsaTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRsaTestViewController.h; sourceTree = "<group>"; };
+		93BEFB1D18FD1E4D00488967 /* SCRsaTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRsaTestViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93BEFAD618FD1B0A00488967 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93BEFB1B18FD1E1E00488967 /* libssl.a in Frameworks */,
+				93BEFADF18FD1B0A00488967 /* CoreGraphics.framework in Frameworks */,
+				93BEFAE118FD1B0A00488967 /* UIKit.framework in Frameworks */,
+				93BEFB1A18FD1E1E00488967 /* libcrypto.a in Frameworks */,
+				93BEFADD18FD1B0A00488967 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93BEFAF118FD1B0A00488967 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93BEFAF618FD1B0A00488967 /* XCTest.framework in Frameworks */,
+				93BEFAF818FD1B0A00488967 /* UIKit.framework in Frameworks */,
+				93BEFAF718FD1B0A00488967 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		93BEFAD018FD1B0900488967 = {
+			isa = PBXGroup;
+			children = (
+				93BEFB0B18FD1BC000488967 /* openssllib */,
+				93BEFAE218FD1B0A00488967 /* SCRsa */,
+				93BEFAFB18FD1B0A00488967 /* SCRsaTests */,
+				93BEFADB18FD1B0A00488967 /* Frameworks */,
+				93BEFADA18FD1B0A00488967 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93BEFADA18FD1B0A00488967 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93BEFAD918FD1B0A00488967 /* SCRsa.app */,
+				93BEFAF418FD1B0A00488967 /* SCRsaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93BEFADB18FD1B0A00488967 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93BEFADC18FD1B0A00488967 /* Foundation.framework */,
+				93BEFADE18FD1B0A00488967 /* CoreGraphics.framework */,
+				93BEFAE018FD1B0A00488967 /* UIKit.framework */,
+				93BEFAF518FD1B0A00488967 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93BEFAE218FD1B0A00488967 /* SCRsa */ = {
+			isa = PBXGroup;
+			children = (
+				93BEFB1118FD1C2200488967 /* Base64.h */,
+				93BEFB1218FD1C2200488967 /* Base64.m */,
+				93BEFB1318FD1C2200488967 /* SCRSA.h */,
+				93BEFB1418FD1C2200488967 /* SCRSA.m */,
+				93BEFAEB18FD1B0A00488967 /* SCAppDelegate.h */,
+				93BEFAEC18FD1B0A00488967 /* SCAppDelegate.m */,
+				93BEFAEE18FD1B0A00488967 /* Images.xcassets */,
+				93BEFAE318FD1B0A00488967 /* Supporting Files */,
+				93BEFB1C18FD1E4D00488967 /* SCRsaTestViewController.h */,
+				93BEFB1D18FD1E4D00488967 /* SCRsaTestViewController.m */,
+			);
+			path = SCRsa;
+			sourceTree = "<group>";
+		};
+		93BEFAE318FD1B0A00488967 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93BEFAE418FD1B0A00488967 /* SCRsa-Info.plist */,
+				93BEFAE518FD1B0A00488967 /* InfoPlist.strings */,
+				93BEFAE818FD1B0A00488967 /* main.m */,
+				93BEFAEA18FD1B0A00488967 /* SCRsa-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93BEFAFB18FD1B0A00488967 /* SCRsaTests */ = {
+			isa = PBXGroup;
+			children = (
+				93BEFB0118FD1B0A00488967 /* SCRsaTests.m */,
+				93BEFAFC18FD1B0A00488967 /* Supporting Files */,
+			);
+			path = SCRsaTests;
+			sourceTree = "<group>";
+		};
+		93BEFAFC18FD1B0A00488967 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93BEFAFD18FD1B0A00488967 /* SCRsaTests-Info.plist */,
+				93BEFAFE18FD1B0A00488967 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93BEFB0B18FD1BC000488967 /* openssllib */ = {
+			isa = PBXGroup;
+			children = (
+				93BEFB1718FD1E1E00488967 /* lib */,
+			);
+			name = openssllib;
+			sourceTree = "<group>";
+		};
+		93BEFB1718FD1E1E00488967 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				93BEFB1818FD1E1E00488967 /* libcrypto.a */,
+				93BEFB1918FD1E1E00488967 /* libssl.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93BEFAD818FD1B0A00488967 /* SCRsa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93BEFB0518FD1B0A00488967 /* Build configuration list for PBXNativeTarget "SCRsa" */;
+			buildPhases = (
+				93BEFAD518FD1B0A00488967 /* Sources */,
+				93BEFAD618FD1B0A00488967 /* Frameworks */,
+				93BEFAD718FD1B0A00488967 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCRsa;
+			productName = SCRsa;
+			productReference = 93BEFAD918FD1B0A00488967 /* SCRsa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93BEFAF318FD1B0A00488967 /* SCRsaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93BEFB0818FD1B0A00488967 /* Build configuration list for PBXNativeTarget "SCRsaTests" */;
+			buildPhases = (
+				93BEFAF018FD1B0A00488967 /* Sources */,
+				93BEFAF118FD1B0A00488967 /* Frameworks */,
+				93BEFAF218FD1B0A00488967 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93BEFAFA18FD1B0A00488967 /* PBXTargetDependency */,
+			);
+			name = SCRsaTests;
+			productName = SCRsaTests;
+			productReference = 93BEFAF418FD1B0A00488967 /* SCRsaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93BEFAD118FD1B0900488967 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = silentcloud;
+				TargetAttributes = {
+					93BEFAF318FD1B0A00488967 = {
+						TestTargetID = 93BEFAD818FD1B0A00488967;
+					};
+				};
+			};
+			buildConfigurationList = 93BEFAD418FD1B0900488967 /* Build configuration list for PBXProject "SCRsa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 93BEFAD018FD1B0900488967;
+			productRefGroup = 93BEFADA18FD1B0A00488967 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93BEFAD818FD1B0A00488967 /* SCRsa */,
+				93BEFAF318FD1B0A00488967 /* SCRsaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93BEFAD718FD1B0A00488967 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93BEFAE718FD1B0A00488967 /* InfoPlist.strings in Resources */,
+				93BEFAEF18FD1B0A00488967 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93BEFAF218FD1B0A00488967 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93BEFB0018FD1B0A00488967 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93BEFAD518FD1B0A00488967 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93BEFB1E18FD1E4D00488967 /* SCRsaTestViewController.m in Sources */,
+				93BEFAED18FD1B0A00488967 /* SCAppDelegate.m in Sources */,
+				93BEFB1518FD1C2200488967 /* Base64.m in Sources */,
+				93BEFB1618FD1C2200488967 /* SCRSA.m in Sources */,
+				93BEFAE918FD1B0A00488967 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93BEFAF018FD1B0A00488967 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93BEFB0218FD1B0A00488967 /* SCRsaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93BEFAFA18FD1B0A00488967 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93BEFAD818FD1B0A00488967 /* SCRsa */;
+			targetProxy = 93BEFAF918FD1B0A00488967 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		93BEFAE518FD1B0A00488967 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93BEFAE618FD1B0A00488967 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		93BEFAFE18FD1B0A00488967 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93BEFAFF18FD1B0A00488967 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93BEFB0318FD1B0A00488967 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		93BEFB0418FD1B0A00488967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93BEFB0618FD1B0A00488967 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SCRsa/SCRsa-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					../include,
+					"\"$(SRCROOT)/include\"",
+				);
+				INFOPLIST_FILE = "SCRsa/SCRsa-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../lib\"",
+					"\"$(SRCROOT)/lib\"",
+					"$(PROJECT_DIR)/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		93BEFB0718FD1B0A00488967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SCRsa/SCRsa-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					../include,
+					"\"$(SRCROOT)/include\"",
+				);
+				INFOPLIST_FILE = "SCRsa/SCRsa-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../lib\"",
+					"\"$(SRCROOT)/lib\"",
+					"$(PROJECT_DIR)/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		93BEFB0918FD1B0A00488967 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SCRsa.app/SCRsa";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SCRsa/SCRsa-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SCRsaTests/SCRsaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		93BEFB0A18FD1B0A00488967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SCRsa.app/SCRsa";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SCRsa/SCRsa-Prefix.pch";
+				INFOPLIST_FILE = "SCRsaTests/SCRsaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93BEFAD418FD1B0900488967 /* Build configuration list for PBXProject "SCRsa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93BEFB0318FD1B0A00488967 /* Debug */,
+				93BEFB0418FD1B0A00488967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93BEFB0518FD1B0A00488967 /* Build configuration list for PBXNativeTarget "SCRsa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93BEFB0618FD1B0A00488967 /* Debug */,
+				93BEFB0718FD1B0A00488967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93BEFB0818FD1B0A00488967 /* Build configuration list for PBXNativeTarget "SCRsaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93BEFB0918FD1B0A00488967 /* Debug */,
+				93BEFB0A18FD1B0A00488967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93BEFAD118FD1B0900488967 /* Project object */;
+}
